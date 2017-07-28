@@ -6,6 +6,7 @@ services:
       - "80:80"
     volumes:
       - .:/var/www/drupal
+      - .docker/sshkeys:/root/.ssh
 
   db:
     image: mysql:5.5
@@ -19,6 +20,7 @@ services:
     volumes:
       - .docker/runtime/data:/var/lib/mysql
       - .docker/db-init:/docker-entrypoint-initdb.d # Place init .sql file(s) in the .docker/db-init folder.
+      - .docker/db/mysqlconf:/etc/mysql/conf.d
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
