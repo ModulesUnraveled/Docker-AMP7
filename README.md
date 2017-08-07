@@ -16,7 +16,7 @@
   * `composer create-project drupal-composer/drupal-project:8.x-dev --stability dev --no-interaction --no-install project_name`
   * `cd project_name`
 2. Clone this repo into your project, and move the pieces into place
-  * `git clone git@github.com:ModulesUnraveled/Docker-AMP7.git && mv Docker-AMP7/.docker/ . && mv Docker-AMP7/docker-compose.yaml . && rm -Rf Docker-AMP7`
+  * `git clone git@github.com:ModulesUnraveled/Docker-AMP7.git && mv Docker-AMP7/.docker/ . && mv Docker-AMP7/docker-compose.yml . && rm -Rf Docker-AMP7`
 3. Add the local domain to your `/etc/hosts` file
   * `sudo vi /etc/hosts`
   * Add `127.0.0.1 yoursite.local`
